@@ -1,6 +1,8 @@
 # DDL 2 Go Struct
 
-This is a simple tool to convert the DDL instructions to a struct in Goland using the SQL package.
+This is a simple tool to convert the DDL instructions to a struct in Golang using the SQL package.
+
+Note: forked from [Wandecilenio/DDL2GS](https://github.com/Wandecilenio/DDL2GS) and adapted specificly to OracleDB (19c) db-dialect, i.e. Redwood.
 
 The steps is simple.
 
@@ -11,7 +13,6 @@ CREATE TABLE public.t_customer
   id serial NOT NULL PRIMARY KEY,
   name character varying(255) NOT NULL,
   document character varying(20) NOT NULL,
-
   created_at timestamp(0) without time zone NOT NULL DEFAULT now(),
   updated_at timestamp(0) without time zone
 );
@@ -35,5 +36,3 @@ type Customer struct {
 	UpdatedAT	*time.Time	`db:"updated_at"`
 }
 ```
-
-**Enjoy!**
