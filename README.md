@@ -2,7 +2,7 @@
 
 This is a simple tool to convert the DDL instructions to a struct in Golang using the SQL package.
 
-Note: forked from [Wandecilenio/DDL2GS](https://github.com/Wandecilenio/DDL2GS) and adapted specificly to OracleDB (19c) db-dialect, i.e. Redwood.
+Note: forked from [Wandecilenio/DDL2GS](https://github.com/Wandecilenio/DDL2GS) and adapted specificly to OracleDB (19c) db-dialect, i.e. Redwood (work-in-progress).
 
 The steps is simple.
 
